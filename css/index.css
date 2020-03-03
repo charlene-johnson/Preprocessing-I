@@ -134,3 +134,45 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 10px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: pink;
+}
+.container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container nav a {
+  text-decoration: none;
+  padding: 2% 10%;
+  font-size: 2rem;
+}
+.container nav a:hover {
+  color: skyblue;
+}
+.container h1 {
+  font-size: 5rem;
+}
+.container h2 {
+  font-size: 3.5rem;
+}
+.container h3 {
+  font-size: 2rem;
+}
+.container p {
+  font-size: 1.8rem;
+}
+.container li {
+  font-size: 1.8rem;
+}
+.container th {
+  font-size: 2rem;
+}
+.container tr {
+  font-size: 1.8rem;
+}

@@ -126,6 +126,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: 'Capriola', sans-serif;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -141,6 +151,7 @@ html {
   width: 80%;
   margin: 0 auto;
   background-color: pink;
+  color: #BA8CD7;
 }
 .container nav {
   display: flex;
@@ -150,14 +161,13 @@ html {
 .container nav a {
   text-decoration: none;
   padding: 2% 10%;
-  font-size: 2rem;
+  font-size: 2.8rem;
   color: white;
 }
 .container nav a:hover {
   color: #D7BCFE;
 }
 .container .name-div {
-  color: #BA8CD7;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -171,6 +181,28 @@ html {
   background-size: cover;
   transform: rotate(90deg);
 }
+.container .about-me {
+  text-align: left;
+  padding: 2% 4%;
+}
+.container .about-me .annoyingButton {
+  margin: 1% 50%;
+}
+.container .about-me button {
+  font-size: 15px;
+  width: 170px;
+  padding: 5px;
+  background: none;
+  background-color: #BA8CD7;
+  color: white;
+  margin-top: 10px;
+  border: solid 1px #D7BCFE;
+  border-radius: 8px;
+}
+.container hr {
+  width: 90%;
+  border-top: 2px solid #D7BCFE;
+}
 .container h1 {
   font-size: 5rem;
   text-align: center;
@@ -179,17 +211,17 @@ html {
   font-size: 3.5rem;
 }
 .container h3 {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 .container p {
-  font-size: 1.8rem;
-}
-.container li {
-  font-size: 1.8rem;
-}
-.container th {
   font-size: 2rem;
 }
+.container li {
+  font-size: 2rem;
+}
+.container th {
+  font-size: 2.8rem;
+}
 .container tr {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }

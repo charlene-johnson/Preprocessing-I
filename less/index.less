@@ -48,12 +48,18 @@ table {
 	border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, h6, button, a {
+	font-family: 'Capriola', sans-serif;
+}
+
 /* Set every element's box-sizing to border-box */
 @backgroundColor: pink;
-@fontSizes18: 1.8rem;
-@biggerFont: 2rem;
+@fontSizes18: 2rem;
+@biggerFont: 2.8rem;
 @textColor: #D7BCFE;
 @textColor2: #BA8CD7;
+@colorWhite: white;
+
 
 * {
     box-sizing: border-box;
@@ -73,6 +79,7 @@ html {
 	width: 80%;
 	margin: 0 auto;
 	background-color: @backgroundColor;
+	color: @textColor2;
 	
 
 	nav {
@@ -84,7 +91,8 @@ html {
 			text-decoration: none;
 			padding: 2% 10%;
 			font-size: @biggerFont;
-			color: white;
+			color: @colorWhite;
+			
 		}
 		
 		a:hover {
@@ -92,7 +100,7 @@ html {
 		}
 	}
 	.name-div {
-		color: @textColor2;
+		
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -108,9 +116,37 @@ html {
 			transform: rotate(90deg);
 		}
 	}
+
+	.about-me {
+		text-align: left;
+		padding: 2% 4%;
+	
+		.annoyingButton {
+			margin: 1% 50%;
+		}
+
+		button {
+			font-size: 15px;
+    		width: 170px;
+    		padding: 5px;
+			background: none;
+			background-color:@textColor2;
+			color: @colorWhite;
+    		margin-top: 10px;
+    		border: solid 1px @textColor;
+			border-radius: 8px;	
+		}
+	}
+
+	hr {
+		width: 90%;
+		border-top: 2px solid #D7BCFE;
+		
+	}
 	h1 {
 		font-size:5rem;
 		text-align: center;
+		
 		
 	}
 	h2 {

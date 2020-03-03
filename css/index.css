@@ -199,6 +199,9 @@ html {
   border: solid 1px #D7BCFE;
   border-radius: 8px;
 }
+.container .about-me button:hover {
+  color: #D7BCFE;
+}
 .container hr {
   width: 90%;
   border-top: 2px solid #D7BCFE;

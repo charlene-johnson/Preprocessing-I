@@ -52,6 +52,8 @@ table {
 @backgroundColor: pink;
 @fontSizes18: 1.8rem;
 @biggerFont: 2rem;
+@textColor: #D7BCFE;
+@textColor2: #BA8CD7;
 
 * {
     box-sizing: border-box;
@@ -71,6 +73,7 @@ html {
 	width: 80%;
 	margin: 0 auto;
 	background-color: @backgroundColor;
+	
 
 	nav {
 		display: flex;
@@ -81,15 +84,34 @@ html {
 			text-decoration: none;
 			padding: 2% 10%;
 			font-size: @biggerFont;
+			color: white;
 		}
 		
 		a:hover {
-			color: skyblue;
+			color: @textColor;
 		}
 	}
+	.name-div {
+		color: @textColor2;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 2%;
 
+
+		.picture {
+			background-image: url(../img/me.jpeg);
+			width: 500px;
+			height: 500px;
+			background-position: center;
+			background-size: cover;
+			transform: rotate(90deg);
+		}
+	}
 	h1 {
 		font-size:5rem;
+		text-align: center;
+		
 	}
 	h2 {
 		font-size: 3.5rem;

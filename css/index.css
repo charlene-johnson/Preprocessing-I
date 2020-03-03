@@ -151,12 +151,29 @@ html {
   text-decoration: none;
   padding: 2% 10%;
   font-size: 2rem;
+  color: white;
 }
 .container nav a:hover {
-  color: skyblue;
+  color: #D7BCFE;
+}
+.container .name-div {
+  color: #BA8CD7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+.container .name-div .picture {
+  background-image: url(../img/me.jpeg);
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  transform: rotate(90deg);
 }
 .container h1 {
   font-size: 5rem;
+  text-align: center;
 }
 .container h2 {
   font-size: 3.5rem;

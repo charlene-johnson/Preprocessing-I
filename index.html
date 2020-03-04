@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://kit.fontawesome.com/7af3f9ca95.js" crossorigin="anonymous"></script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -41,45 +43,75 @@
     </div>
     </header>
     <hr>
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>Hardware and Software Knowledge</li>
-        <li>Customer Support</li>
-      </ul>
-      <h2>Work History</h2>
-      <table>
-        <tr>
-          <th>Year</th>
-          <th>Company</th>
-          <th>Title</th>
-        </tr>
-        <tr>
-          <td>2013-2015</td>
-          <td>Sykes Home</td>
-          <td>Customer Service Representative</td>
-        </tr>
-        <tr>
-          <td>2015-2017</td>
-          <td>Telenetwork</td>
-          <td>Technical Support Representative</td>
-        </tr>
-        <tr>
-          <td>2018-Current</td>
-          <td>LionBridge</td>
-          <td>Search Engine Evaluator</td>
-        </tr>
-      </table>
+    <section class="more-stuff">
+      <div>
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML5</li><br>
+          <li>CSS3</li><br>
+          <li>Javascript</li><br>
+          <li>Hardware and Software Knowledge</li><br>
+          <li>Customer Support</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Work History</h2>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Company</th>
+            <th>Title</th>
+          </tr>
+          <tr>
+            <td>2013-2015</td>
+            <td>Sykes Home</td>
+            <td>Customer Service Representative</td>
+          </tr>
+          <tr>
+            <td>2015-2017</td>
+            <td>Telenetwork</td>
+            <td>Technical Support Representative</td>
+          </tr>
+          <tr>
+            <td>2018-Current</td>
+            <td>LionBridge</td>
+            <td>Search Engine Evaluator</td>
+          </tr>
+        </table>
+      </div>
     </section>
-    <section>
-      <h3>Contact Me</h3>
-      <p>You can contact me by email at:<a href="mailto:charlene.j8234@gmail.com">charlene.j8234@gmail.com</a></p>
+    <section class="form">
+      <div class="boxes">
+        <h3>Contact Me</h3>
+          <form method="post" action= "">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value=""/>
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value=""/>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+              </div>
+            </div>
+            <ul class="send-message">
+              <li><input type="submit" name="submit" id="submit" value="Send Me a Message"/></li>
+            </ul>
+          </form>
+        </div>
     </section>
     <footer>
-      Copyright Charlene Johnson 2020
+      <section class="icon">
+        <a href="https://www.linkedin.com/in/charlene-johnson-b78b15145" target="blank"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/charlene-johnson" target= "blank"><i class="fab fa-linkedin"></i></a>
+      </section>
+      <section class="copyright">
+        <p>&copy; Copyright Charlene Johnson 2020</p>
+    </section>
     </footer>
   </div>
 </body>

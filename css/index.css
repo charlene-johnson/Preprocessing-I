@@ -272,24 +272,20 @@ html {
   max-width: 100%;
   width: 64rem;
   text-align: center;
-}
-.container .form .fields {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 50%;
-  margin: 5%;
 }
-.container .form .fields .field.half {
-  width: 50%;
+.container .form .field.half {
+  width: 10%;
 }
-.container .form .fields .field {
+.container .form .field {
   flex-shrink: 0;
   flex-grow: 0;
   padding: 1.5rem 0 0 1.5rem;
   width: 40%;
 }
-.container .form .send-message input {
+.container .send-message input {
   font-size: 15px;
   width: 170px;
   padding: 5px;
@@ -300,17 +296,17 @@ html {
   border: solid 1px #D7BCFE;
   border-radius: 8px;
 }
-.container .form .send-message input:hover {
+.container .send-message input:hover {
   color: #D7BCFE;
 }
-.container .icon {
+.icon {
   display: block;
   text-align: center;
   padding-top: 3%;
 }
-.container .icon a {
+.icon a {
   color: #BA8CD7;
 }
-.container .icon a:hover {
+.icon a:hover {
   color: #D7BCFE;
 }

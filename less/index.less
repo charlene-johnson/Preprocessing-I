@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6, button, a {
     	border: solid 1px @textColor;
 		border-radius: 8px;	
 }
+.tables() {
+	background-color: @textColor2;
+	color: @textColor;
+}
 
 
 * {
@@ -217,14 +221,11 @@ html {
 		}
 
 		tr:hover {
-			background-color: @textColor2;
-			color: @textColor;
-
+			.tables();
 		}
 
 		th {
-			background-color: @textColor2;
-			color: @textColor;
+			.tables();
 		}
 	}
 
@@ -234,18 +235,13 @@ html {
 		max-width: 100%;
 		width: 64rem;
 		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
-		
-
-		.fields {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			width: 50%;
-			margin: 5%;
-
+	
 			.field.half {
-				width: 50%;
+				width: 10%;
 			}
 
 			.field {
@@ -285,5 +281,5 @@ html {
 		}
 
 	}
-}
+
 

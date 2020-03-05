@@ -48,12 +48,277 @@ table {
 	border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, h6, button, a {
+	font-family: 'Capriola', sans-serif;
+}
+
 /* Set every element's box-sizing to border-box */
+@backgroundColor: pink;
+@fontSizes18: 2rem;
+@biggerFont: 2.8rem;
+@textColor: #D7BCFE;
+@textColor2: #BA8CD7;
+@colorWhite: white;
+.button-specs() {
+	font-size: 15px;
+    	width: 170px;
+    	padding: 5px;
+		background: none;
+		background-color:@textColor2;
+		color: @colorWhite;
+    	margin-top: 10px;
+    	border: solid 1px @textColor;
+		border-radius: 8px;	
+}
+.tables() {
+	background-color: @textColor2;
+	color: @textColor;
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
+	
 }
+
+html {
+	font-size: 10px;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background-color: @backgroundColor;
+	color: @textColor2;
+
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media (max-width: 500px){
+			flex-direction: column;
+		}
+
+		a {
+			text-decoration: none;
+			padding: 2% 10%;
+			font-size: 1.7rem;
+			color: @colorWhite;
+
+			@media (max-width: 500px){
+				padding-bottom: 5%;
+			}	
+			
+		}
+		
+		a:hover {
+			color: @textColor;
+		}
+	}
+	.name-div {
+		
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 2%;
+
+
+		.picture {
+			background-image: url(../img/me.jpeg);
+			width: 500px;
+			height: 500px;
+			background-position: center;
+			background-size: cover;
+			transform: rotate(90deg);
+
+			@media (max-width: 500px){
+				display: none;
+			}
+		}
+	}
+
+	.about-me {
+		text-align: left;
+		padding: 2% 4%;
+	
+		.annoyingButton {
+			margin: 1% 50%;
+
+			@media (max-width: 500px) {
+				margin: 3% 30%;
+			}
+		}
+
+		button {
+			.button-specs();
+
+			
+		}
+
+		button:hover {
+			color: @textColor;
+		}
+	}
+
+	hr {
+		width: 90%;
+		border-top: 2px solid #D7BCFE;
+		
+	}
+	h1 {
+		font-size:5rem;
+		text-align: center;
+		
+		
+	}
+	h2 {
+		font-size: 3.5rem;
+	}
+	
+	h3 {
+		font-size: @biggerFont;
+	}
+	p {
+		font-size: @fontSizes18;
+	}
+	
+
+	ul {
+		padding-top: 5%;
+		
+		li {
+			font-size: @fontSizes18;
+		}
+	}
+	
+	th {
+		font-size: @biggerFont;
+	}
+	
+	tr {
+		font-size: @fontSizes18;
+	}
+
+	form {
+		font-size: @fontSizes18;
+	}
+
+	i {
+		font-size: @biggerFont;
+	}
+
+	.copyright {
+		text-align: center;
+		padding: 3% 0 3%;
+	}
+
+	.more-stuff {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
+		
+		h2 {
+			padding:7% 0;
+		}
+	}
+
+
+	.table-div {
+		@media (max-width: 500px) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin:0 3%;
+		}
+
+		table {
+		border-collapse: collapse;
+		width: 100%;
+
+
+		td, th {
+			border: 1px solid;
+			padding: 8px;
+		}
+
+		tr:hover {
+			.tables();
+		}
+
+		th {
+			.tables();
+		}
+	}
+	}
+	
+
+	.form {
+		padding: 7rem 3.5rem 5rem 3.5rem;
+		margin: 0 auto;
+		max-width: 100%;
+		width: 64rem;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	
+			.field.half {
+				width: 10%;
+			}
+
+			.field {
+				flex-shrink: 0;
+				flex-grow: 0;
+				padding: 1.5rem 0 0 1.5rem;
+				width: 40%;
+			
+			}
+		}
+
+		.send-message {
+			
+			input {
+				.button-specs();
+				margin-right: 25%
+
+
+			}
+
+			input:hover{
+				color: @textColor;
+			}
+		}
+		
+
+	}
+
+	.icon {
+		display: block;
+		text-align: center;
+		padding-top: 3%;
+
+		a {
+			color: @textColor2;
+		}
+
+		a:hover {
+			color: @textColor;
+		}
+
+	}
+	
+
 

@@ -4,16 +4,115 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Charlene's Resume</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Capriola&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://kit.fontawesome.com/7af3f9ca95.js" crossorigin="anonymous"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <nav>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="https://charlene-johnson.github.io/portfolio-website/">Portfolio</a>
+      <a href="">Contact</a>
+    </nav>
+    <header>
+      <div class="name-div">
+        <h1>Charlene Johnson<br>
+          Full Stack Web Developer</h1>
+        <div class="picture">
+
+        </div>
+      </div>
+      <div class="about-me">
+        <p>I am an Innovative Full Stack Web Developer with a great history of dependable customer service. Very knowledgable in many computer languages, with a broad range of technical knowledge. Eager to stay on top of new things and very open to learning.</p><br><br>
+        
+        <p>I have done a few side projects that you can see by clicking the button below.</p>
+        <div class="annoyingButton">
+          <button>Click here to see my projects!</button>
+        </div>
+    </div>
+    </header>
+    <hr>
+    <section class="more-stuff">
+      <div class="my-skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML5</li><br>
+          <li>CSS3</li><br>
+          <li>Javascript</li><br>
+          <li>Hardware and Software Knowledge</li><br>
+          <li>Customer Support</li>
+        </ul>
+      </div>
+      <div class="table-div">
+        <h2>Work History</h2>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Company</th>
+            <th>Title</th>
+          </tr>
+          <tr>
+            <td>2013-2015</td>
+            <td>Sykes Home</td>
+            <td>Customer Service Representative</td>
+          </tr>
+          <tr>
+            <td>2015-2017</td>
+            <td>Telenetwork</td>
+            <td>Technical Support Representative</td>
+          </tr>
+          <tr>
+            <td>2018-Current</td>
+            <td>LionBridge</td>
+            <td>Search Engine Evaluator</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="form">
+      <div class="boxes">
+        <h3>Contact Me</h3>
+          <form method="post" action= "">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value=""/>
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value=""/>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+              </div>
+            </div>
+            <ul class="send-message">
+              <li><input type="submit" name="submit" id="submit" value="Send Me a Message"/></li>
+            </ul>
+          </form>
+        </div>
+    </section>
+    <footer>
+      <section class="icon">
+        <a href="https://www.linkedin.com/in/charlene-johnson-b78b15145" target="blank"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/charlene-johnson" target= "blank"><i class="fab fa-linkedin"></i></a>
+      </section>
+      <section class="copyright">
+        <p>&copy; Copyright Charlene Johnson 2020</p>
+    </section>
+    </footer>
+  </div>
 </body>
 </html>

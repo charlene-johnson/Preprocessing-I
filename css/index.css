@@ -1,1 +1,346 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: 'Capriola', sans-serif;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: pink;
+  color: #BA8CD7;
+}
+.container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container nav {
+    flex-direction: column;
+  }
+}
+.container nav a {
+  text-decoration: none;
+  padding: 2% 10%;
+  font-size: 1.7rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  .container nav a {
+    padding-bottom: 5%;
+  }
+}
+.container nav a:hover {
+  color: #D7BCFE;
+}
+.container .name-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+.container .name-div .picture {
+  background-image: url(../img/me.jpeg);
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  transform: rotate(90deg);
+}
+@media (max-width: 500px) {
+  .container .name-div .picture {
+    display: none;
+  }
+}
+.container .about-me {
+  text-align: left;
+  padding: 2% 4%;
+}
+.container .about-me .annoyingButton {
+  margin: 1% 50%;
+}
+@media (max-width: 500px) {
+  .container .about-me .annoyingButton {
+    margin: 3% 30%;
+  }
+}
+.container .about-me button {
+  font-size: 15px;
+  width: 170px;
+  padding: 5px;
+  background: none;
+  background-color: #BA8CD7;
+  color: white;
+  margin-top: 10px;
+  border: solid 1px #D7BCFE;
+  border-radius: 8px;
+}
+.container .about-me button:hover {
+  color: #D7BCFE;
+}
+.container hr {
+  width: 90%;
+  border-top: 2px solid #D7BCFE;
+}
+.container h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.container h2 {
+  font-size: 3.5rem;
+}
+.container h3 {
+  font-size: 2.8rem;
+}
+.container p {
+  font-size: 2rem;
+}
+.container ul {
+  padding-top: 5%;
+}
+.container ul li {
+  font-size: 2rem;
+}
+.container th {
+  font-size: 2.8rem;
+}
+.container tr {
+  font-size: 2rem;
+}
+.container form {
+  font-size: 2rem;
+}
+.container i {
+  font-size: 2.8rem;
+}
+.container .copyright {
+  text-align: center;
+  padding: 3% 0 3%;
+}
+.container .more-stuff {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .container .more-stuff {
+    flex-direction: column;
+  }
+}
+.container .more-stuff h2 {
+  padding: 7% 0;
+}
+@media (max-width: 500px) {
+  .container .table-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 3%;
+  }
+}
+.container .table-div table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .table-div table td,
+.container .table-div table th {
+  border: 1px solid;
+  padding: 8px;
+}
+.container .table-div table tr:hover {
+  background-color: #BA8CD7;
+  color: #D7BCFE;
+}
+.container .table-div table th {
+  background-color: #BA8CD7;
+  color: #D7BCFE;
+}
+.container .form {
+  padding: 7rem 3.5rem 5rem 3.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 64rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .form .field.half {
+  width: 10%;
+}
+.container .form .field {
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 1.5rem 0 0 1.5rem;
+  width: 40%;
+}
+.container .send-message input {
+  font-size: 15px;
+  width: 170px;
+  padding: 5px;
+  background: none;
+  background-color: #BA8CD7;
+  color: white;
+  margin-top: 10px;
+  border: solid 1px #D7BCFE;
+  border-radius: 8px;
+  margin-right: 25%;
+}
+.container .send-message input:hover {
+  color: #D7BCFE;
+}
+.icon {
+  display: block;
+  text-align: center;
+  padding-top: 3%;
+}
+.icon a {
+  color: #BA8CD7;
+}
+.icon a:hover {
+  color: #D7BCFE;
+}

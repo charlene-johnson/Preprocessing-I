@@ -158,11 +158,21 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container nav {
+    flex-direction: column;
+  }
+}
 .container nav a {
   text-decoration: none;
   padding: 2% 10%;
   font-size: 1.7rem;
   color: white;
+}
+@media (max-width: 500px) {
+  .container nav a {
+    padding-bottom: 5%;
+  }
 }
 .container nav a:hover {
   color: #D7BCFE;
@@ -181,12 +191,22 @@ html {
   background-size: cover;
   transform: rotate(90deg);
 }
+@media (max-width: 500px) {
+  .container .name-div .picture {
+    display: none;
+  }
+}
 .container .about-me {
   text-align: left;
   padding: 2% 4%;
 }
 .container .about-me .annoyingButton {
   margin: 1% 50%;
+}
+@media (max-width: 500px) {
+  .container .about-me .annoyingButton {
+    margin: 3% 30%;
+  }
 }
 .container .about-me button {
   font-size: 15px;
@@ -246,23 +266,36 @@ html {
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .container .more-stuff {
+    flex-direction: column;
+  }
+}
 .container .more-stuff h2 {
   padding: 7% 0;
 }
-.container table {
+@media (max-width: 500px) {
+  .container .table-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 3%;
+  }
+}
+.container .table-div table {
   border-collapse: collapse;
   width: 100%;
 }
-.container table td,
-.container table th {
+.container .table-div table td,
+.container .table-div table th {
   border: 1px solid;
   padding: 8px;
 }
-.container table tr:hover {
+.container .table-div table tr:hover {
   background-color: #BA8CD7;
   color: #D7BCFE;
 }
-.container table th {
+.container .table-div table th {
   background-color: #BA8CD7;
   color: #D7BCFE;
 }
@@ -295,6 +328,7 @@ html {
   margin-top: 10px;
   border: solid 1px #D7BCFE;
   border-radius: 8px;
+  margin-right: 25%;
 }
 .container .send-message input:hover {
   color: #D7BCFE;
